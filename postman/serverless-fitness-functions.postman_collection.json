@@ -1,0 +1,63 @@
+{
+  "info": {
+    "_postman_id": "f5837697-b7db-4962-bead-fc24ddcee503",
+    "name": "serverless-fitness-functions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "create session",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"SESSION_STARTED\",\n  \"customerId\": \"083e08bc-b0e3-4d4d-8edb-ad81c94cfa51\",\n  \"kilowattPrice\": 0.05\n}\n"
+        },
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/api/v1/sessions/",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": ["api", "v1", "sessions", ""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "stop session",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"SESSION_STARTED\",\n  \"customerId\": \"083e08bc-b0e3-4d4d-8edb-ad81c94cfa51\",\n  \"kilowattPrice\": 0.05\n}\n"
+        },
+        "url": {
+          "raw": "https://your-rest-id.execute-api.your-region.amazonaws.com/api/v1/sessions/da173bbf-a055-4764-97e7-4d708aa15685",
+          "protocol": "https",
+          "host": [
+            "your-rest-id",
+            "execute-api",
+            "your-region",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "sessions",
+            "da173bbf-a055-4764-97e7-4d708aa15685"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
